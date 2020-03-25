@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="sistemaMatriculaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="aluno">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="turma_id" Type="int" Nullable="false" />
+          <Property Name="endereco_id" Type="int" Nullable="false" />
+          <Property Name="contato_id" Type="int" Nullable="false" />
+          <Property Name="nomeAluno" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="nomeResponsavel" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="cpfAluno" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="cpfResponsavel" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="sexo" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="dataNascimento" Type="date" Nullable="false" />
+          <Property Name="dataMatricula" Type="date" Nullable="false" />
+          <Property Name="dataSaida" Type="date" />
+          <Property Name="matricula" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="beneficios" Type="text" Nullable="false" />
+          <Property Name="restricoes" Type="text" Nullable="false" />
+          <Property Name="situacao" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="contato">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fone1" Type="varchar" MaxLength="12" />
+          <Property Name="contato1" Type="varchar" MaxLength="60" />
+          <Property Name="fone2" Type="varchar" MaxLength="12" />
+          <Property Name="contato2" Type="varchar" MaxLength="60" />
+          <Property Name="fone3" Type="varchar" MaxLength="12" />
+          <Property Name="contato3" Type="varchar" MaxLength="60" />
+          <Property Name="fone4" Type="varchar" MaxLength="12" />
+          <Property Name="contato4" Type="varchar" MaxLength="60" />
+          <Property Name="fone5" Type="varchar" MaxLength="12" />
+          <Property Name="contato5" Type="varchar" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="disciplina">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nome" Type="varchar" MaxLength="40" />
+          <Property Name="descricao" Type="varchar" MaxLength="60" />
+        </EntityType>
+        <EntityType Name="endereco">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cep" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="descricao" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="numero" Type="char" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="funcionario">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nome" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="descricao" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="dataAdmissao" Type="date" />
+          <Property Name="dataDemissao" Type="date" />
+          <Property Name="situacao" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="turma">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="disciplina_id" Type="int" Nullable="false" />
+          <Property Name="funcionario_id" Type="int" Nullable="false" />
+          <Property Name="nome" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="sala" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="situacao" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="funcionario_id" Type="int" Nullable="false" />
+          <Property Name="login" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="senha" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="dataCriacao" Type="date" Nullable="false" />
+          <Property Name="situacao" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__aluno__contato_i__395884C4">
+          <End Role="contato" Type="Self.contato" Multiplicity="1" />
+          <End Role="aluno" Type="Self.aluno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contato">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="aluno">
+              <PropertyRef Name="contato_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aluno__endereco___3A4CA8FD">
+          <End Role="endereco" Type="Self.endereco" Multiplicity="1" />
+          <End Role="aluno" Type="Self.aluno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="endereco">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="aluno">
+              <PropertyRef Name="endereco_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aluno__turma_id__3B40CD36">
+          <End Role="turma" Type="Self.turma" Multiplicity="1" />
+          <End Role="aluno" Type="Self.aluno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="turma">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="aluno">
+              <PropertyRef Name="turma_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__turma__disciplin__3587F3E0">
+          <End Role="disciplina" Type="Self.disciplina" Multiplicity="1" />
+          <End Role="turma" Type="Self.turma" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="disciplina">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="turma">
+              <PropertyRef Name="disciplina_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__turma__funcionar__3493CFA7">
+          <End Role="funcionario" Type="Self.funcionario" Multiplicity="1" />
+          <End Role="turma" Type="Self.turma" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="funcionario">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="turma">
+              <PropertyRef Name="funcionario_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__usuario__funcion__30C33EC3">
+          <End Role="funcionario" Type="Self.funcionario" Multiplicity="1" />
+          <End Role="usuario" Type="Self.usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="funcionario">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="usuario">
+              <PropertyRef Name="funcionario_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sistemaMatriculaModelStoreContainer">
+          <EntitySet Name="aluno" EntityType="Self.aluno" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="contato" EntityType="Self.contato" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="disciplina" EntityType="Self.disciplina" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="endereco" EntityType="Self.endereco" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="funcionario" EntityType="Self.funcionario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="turma" EntityType="Self.turma" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__aluno__contato_i__395884C4" Association="Self.FK__aluno__contato_i__395884C4">
+            <End Role="contato" EntitySet="contato" />
+            <End Role="aluno" EntitySet="aluno" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aluno__endereco___3A4CA8FD" Association="Self.FK__aluno__endereco___3A4CA8FD">
+            <End Role="endereco" EntitySet="endereco" />
+            <End Role="aluno" EntitySet="aluno" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aluno__turma_id__3B40CD36" Association="Self.FK__aluno__turma_id__3B40CD36">
+            <End Role="turma" EntitySet="turma" />
+            <End Role="aluno" EntitySet="aluno" />
+          </AssociationSet>
+          <AssociationSet Name="FK__turma__disciplin__3587F3E0" Association="Self.FK__turma__disciplin__3587F3E0">
+            <End Role="disciplina" EntitySet="disciplina" />
+            <End Role="turma" EntitySet="turma" />
+          </AssociationSet>
+          <AssociationSet Name="FK__turma__funcionar__3493CFA7" Association="Self.FK__turma__funcionar__3493CFA7">
+            <End Role="funcionario" EntitySet="funcionario" />
+            <End Role="turma" EntitySet="turma" />
+          </AssociationSet>
+          <AssociationSet Name="FK__usuario__funcion__30C33EC3" Association="Self.FK__usuario__funcion__30C33EC3">
+            <End Role="funcionario" EntitySet="funcionario" />
+            <End Role="usuario" EntitySet="usuario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sistemaMatriculaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="aluno">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="turma_id" Type="Int32" Nullable="false" />
+          <Property Name="endereco_id" Type="Int32" Nullable="false" />
+          <Property Name="contato_id" Type="Int32" Nullable="false" />
+          <Property Name="nomeAluno" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nomeResponsavel" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cpfAluno" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cpfResponsavel" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sexo" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="dataNascimento" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="dataMatricula" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="dataSaida" Type="DateTime" Precision="0" />
+          <Property Name="matricula" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="beneficios" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="restricoes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="situacao" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="contato" Relationship="Self.FK__aluno__contato_i__395884C4" FromRole="aluno" ToRole="contato" />
+          <NavigationProperty Name="endereco" Relationship="Self.FK__aluno__endereco___3A4CA8FD" FromRole="aluno" ToRole="endereco" />
+          <NavigationProperty Name="turma" Relationship="Self.FK__aluno__turma_id__3B40CD36" FromRole="aluno" ToRole="turma" />
+        </EntityType>
+        <EntityType Name="contato">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fone1" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="contato1" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="fone2" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="contato2" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="fone3" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="contato3" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="fone4" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="contato4" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="fone5" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="contato5" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="aluno" Relationship="Self.FK__aluno__contato_i__395884C4" FromRole="contato" ToRole="aluno" />
+        </EntityType>
+        <EntityType Name="disciplina">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nome" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="descricao" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="turma" Relationship="Self.FK__turma__disciplin__3587F3E0" FromRole="disciplina" ToRole="turma" />
+        </EntityType>
+        <EntityType Name="endereco">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cep" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descricao" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="numero" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="aluno" Relationship="Self.FK__aluno__endereco___3A4CA8FD" FromRole="endereco" ToRole="aluno" />
+        </EntityType>
+        <EntityType Name="funcionario">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nome" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descricao" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dataAdmissao" Type="DateTime" Precision="0" />
+          <Property Name="dataDemissao" Type="DateTime" Precision="0" />
+          <Property Name="situacao" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="turma" Relationship="Self.FK__turma__funcionar__3493CFA7" FromRole="funcionario" ToRole="turma" />
+          <NavigationProperty Name="usuario" Relationship="Self.FK__usuario__funcion__30C33EC3" FromRole="funcionario" ToRole="usuario" />
+        </EntityType>
+        <EntityType Name="turma">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="disciplina_id" Type="Int32" Nullable="false" />
+          <Property Name="funcionario_id" Type="Int32" Nullable="false" />
+          <Property Name="nome" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sala" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="situacao" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="aluno" Relationship="Self.FK__aluno__turma_id__3B40CD36" FromRole="turma" ToRole="aluno" />
+          <NavigationProperty Name="disciplina" Relationship="Self.FK__turma__disciplin__3587F3E0" FromRole="turma" ToRole="disciplina" />
+          <NavigationProperty Name="funcionario" Relationship="Self.FK__turma__funcionar__3493CFA7" FromRole="turma" ToRole="funcionario" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="funcionario_id" Type="Int32" Nullable="false" />
+          <Property Name="login" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="senha" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dataCriacao" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="situacao" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="funcionario" Relationship="Self.FK__usuario__funcion__30C33EC3" FromRole="usuario" ToRole="funcionario" />
+        </EntityType>
+        <Association Name="FK__aluno__contato_i__395884C4">
+          <End Role="contato" Type="Self.contato" Multiplicity="1" />
+          <End Role="aluno" Type="Self.aluno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contato">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="aluno">
+              <PropertyRef Name="contato_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aluno__endereco___3A4CA8FD">
+          <End Role="endereco" Type="Self.endereco" Multiplicity="1" />
+          <End Role="aluno" Type="Self.aluno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="endereco">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="aluno">
+              <PropertyRef Name="endereco_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aluno__turma_id__3B40CD36">
+          <End Role="turma" Type="Self.turma" Multiplicity="1" />
+          <End Role="aluno" Type="Self.aluno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="turma">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="aluno">
+              <PropertyRef Name="turma_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__turma__disciplin__3587F3E0">
+          <End Role="disciplina" Type="Self.disciplina" Multiplicity="1" />
+          <End Role="turma" Type="Self.turma" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="disciplina">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="turma">
+              <PropertyRef Name="disciplina_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__turma__funcionar__3493CFA7">
+          <End Role="funcionario" Type="Self.funcionario" Multiplicity="1" />
+          <End Role="turma" Type="Self.turma" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="funcionario">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="turma">
+              <PropertyRef Name="funcionario_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__usuario__funcion__30C33EC3">
+          <End Role="funcionario" Type="Self.funcionario" Multiplicity="1" />
+          <End Role="usuario" Type="Self.usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="funcionario">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="usuario">
+              <PropertyRef Name="funcionario_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sistemaMatriculaDesktop" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="aluno" EntityType="Self.aluno" />
+          <EntitySet Name="contato" EntityType="Self.contato" />
+          <EntitySet Name="disciplina" EntityType="Self.disciplina" />
+          <EntitySet Name="endereco" EntityType="Self.endereco" />
+          <EntitySet Name="funcionario" EntityType="Self.funcionario" />
+          <EntitySet Name="turma" EntityType="Self.turma" />
+          <EntitySet Name="usuario" EntityType="Self.usuario" />
+          <AssociationSet Name="FK__aluno__contato_i__395884C4" Association="Self.FK__aluno__contato_i__395884C4">
+            <End Role="contato" EntitySet="contato" />
+            <End Role="aluno" EntitySet="aluno" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aluno__endereco___3A4CA8FD" Association="Self.FK__aluno__endereco___3A4CA8FD">
+            <End Role="endereco" EntitySet="endereco" />
+            <End Role="aluno" EntitySet="aluno" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aluno__turma_id__3B40CD36" Association="Self.FK__aluno__turma_id__3B40CD36">
+            <End Role="turma" EntitySet="turma" />
+            <End Role="aluno" EntitySet="aluno" />
+          </AssociationSet>
+          <AssociationSet Name="FK__turma__disciplin__3587F3E0" Association="Self.FK__turma__disciplin__3587F3E0">
+            <End Role="disciplina" EntitySet="disciplina" />
+            <End Role="turma" EntitySet="turma" />
+          </AssociationSet>
+          <AssociationSet Name="FK__turma__funcionar__3493CFA7" Association="Self.FK__turma__funcionar__3493CFA7">
+            <End Role="funcionario" EntitySet="funcionario" />
+            <End Role="turma" EntitySet="turma" />
+          </AssociationSet>
+          <AssociationSet Name="FK__usuario__funcion__30C33EC3" Association="Self.FK__usuario__funcion__30C33EC3">
+            <End Role="funcionario" EntitySet="funcionario" />
+            <End Role="usuario" EntitySet="usuario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sistemaMatriculaModelStoreContainer" CdmEntityContainer="sistemaMatriculaDesktop">
+          <EntitySetMapping Name="aluno">
+            <EntityTypeMapping TypeName="sistemaMatriculaModel.aluno">
+              <MappingFragment StoreEntitySet="aluno">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="turma_id" ColumnName="turma_id" />
+                <ScalarProperty Name="endereco_id" ColumnName="endereco_id" />
+                <ScalarProperty Name="contato_id" ColumnName="contato_id" />
+                <ScalarProperty Name="nomeAluno" ColumnName="nomeAluno" />
+                <ScalarProperty Name="nomeResponsavel" ColumnName="nomeResponsavel" />
+                <ScalarProperty Name="cpfAluno" ColumnName="cpfAluno" />
+                <ScalarProperty Name="cpfResponsavel" ColumnName="cpfResponsavel" />
+                <ScalarProperty Name="sexo" ColumnName="sexo" />
+                <ScalarProperty Name="dataNascimento" ColumnName="dataNascimento" />
+                <ScalarProperty Name="dataMatricula" ColumnName="dataMatricula" />
+                <ScalarProperty Name="dataSaida" ColumnName="dataSaida" />
+                <ScalarProperty Name="matricula" ColumnName="matricula" />
+                <ScalarProperty Name="beneficios" ColumnName="beneficios" />
+                <ScalarProperty Name="restricoes" ColumnName="restricoes" />
+                <ScalarProperty Name="situacao" ColumnName="situacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="contato">
+            <EntityTypeMapping TypeName="sistemaMatriculaModel.contato">
+              <MappingFragment StoreEntitySet="contato">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="fone1" ColumnName="fone1" />
+                <ScalarProperty Name="contato1" ColumnName="contato1" />
+                <ScalarProperty Name="fone2" ColumnName="fone2" />
+                <ScalarProperty Name="contato2" ColumnName="contato2" />
+                <ScalarProperty Name="fone3" ColumnName="fone3" />
+                <ScalarProperty Name="contato3" ColumnName="contato3" />
+                <ScalarProperty Name="fone4" ColumnName="fone4" />
+                <ScalarProperty Name="contato4" ColumnName="contato4" />
+                <ScalarProperty Name="fone5" ColumnName="fone5" />
+                <ScalarProperty Name="contato5" ColumnName="contato5" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="disciplina">
+            <EntityTypeMapping TypeName="sistemaMatriculaModel.disciplina">
+              <MappingFragment StoreEntitySet="disciplina">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nome" ColumnName="nome" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="endereco">
+            <EntityTypeMapping TypeName="sistemaMatriculaModel.endereco">
+              <MappingFragment StoreEntitySet="endereco">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="cep" ColumnName="cep" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="numero" ColumnName="numero" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="funcionario">
+            <EntityTypeMapping TypeName="sistemaMatriculaModel.funcionario">
+              <MappingFragment StoreEntitySet="funcionario">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nome" ColumnName="nome" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="dataAdmissao" ColumnName="dataAdmissao" />
+                <ScalarProperty Name="dataDemissao" ColumnName="dataDemissao" />
+                <ScalarProperty Name="situacao" ColumnName="situacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="turma">
+            <EntityTypeMapping TypeName="sistemaMatriculaModel.turma">
+              <MappingFragment StoreEntitySet="turma">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="disciplina_id" ColumnName="disciplina_id" />
+                <ScalarProperty Name="funcionario_id" ColumnName="funcionario_id" />
+                <ScalarProperty Name="nome" ColumnName="nome" />
+                <ScalarProperty Name="sala" ColumnName="sala" />
+                <ScalarProperty Name="situacao" ColumnName="situacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuario">
+            <EntityTypeMapping TypeName="sistemaMatriculaModel.usuario">
+              <MappingFragment StoreEntitySet="usuario">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="funcionario_id" ColumnName="funcionario_id" />
+                <ScalarProperty Name="login" ColumnName="login" />
+                <ScalarProperty Name="senha" ColumnName="senha" />
+                <ScalarProperty Name="dataCriacao" ColumnName="dataCriacao" />
+                <ScalarProperty Name="situacao" ColumnName="situacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<sistemaMatricula.Models.turma>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .row {
+        background-color: rgb(255, 255, 255,0.3);
+    }
+
+    .table {
+        background-color: rgb(255, 255, 255,0.3);
+        color: black;
+    }
+</style>
+<br />
+<h2>Minhas Disciplinas</h2>
+
+
+<p>
+    <h3 style="text-align:center"> @Html.ActionLink("ADICIONAR", "Create", null, new { @class = "btn btn-light" })</h3>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Turma
+        </th>
+        <th>
+            Sala
+        </th>
+        <th>
+            Disciplina
+        </th>
+        <th>
+            Responsável
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sala)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.disciplina.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.funcionario.nome)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.id }) |
+                @Html.ActionLink("Detalhes", "Details", new { id = item.id }) |
+                @Html.ActionLink("Remover", "Delete", new { id = item.id })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<sistemaMatricula.Models.funcionario>
+
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .row {
+        background-color: rgb(255, 255, 255,0.3);
+    }
+
+    .table {
+        background-color: rgb(255, 255, 255,0.3);
+        color: black;
+    }
+</style>
+<br />
+<h2>Meus Funcionários</h2>
+
+<p>
+    <h3 style="text-align:center"> @Html.ActionLink("ADICIONAR", "Create", null, new { @class = "btn btn-light" })</h3>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Nome
+        </th>
+        <th>
+            Descrição
+        </th>
+        <th>
+            Data Admissão
+        </th>
+        <th>
+            Data Saída
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.nome)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.descricao)
+    </td>
+    <td>
+        @{
+            DateTime dataAdmissao = Convert.ToDateTime(item.dataAdmissao);
+        }
+        @dataAdmissao.ToString("dd/MM/yyyy")
+    </td>
+    <td>
+        @{
+            string saida = "";
+            DateTime dataSaida = Convert.ToDateTime(item.dataDemissao);
+            DateTime dataAgora = DateTime.Now;
+            if (dataSaida.Year < dataAgora.Year)
+            {
+                saida = "Ainda Ativo";
+            }
+            else
+            {
+                saida = dataSaida.ToString("dd/MM/yyyy");
+            }
+        }
+        @saida
+    </td>
+    <td>
+        @Html.ActionLink("Editar", "Edit", new { id = item.id }) |
+        @Html.ActionLink("Detalhes", "Details", new { id = item.id }) |
+        @Html.ActionLink("Remover", "Delete", new { id = item.id })
+    </td>
+</tr>
+    }
+
+</table>

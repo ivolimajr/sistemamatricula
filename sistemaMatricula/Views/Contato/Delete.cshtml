@@ -1,0 +1,104 @@
+﻿@model sistemaMatricula.Models.contato
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>contato</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fone1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fone2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fone3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fone4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fone5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato5)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sistemaMatriculaModelStoreContainer" CdmEntityContainer="sistemaMatriculaDesktop">
+    <EntitySetMapping Name="aluno">
+      <EntityTypeMapping TypeName="sistemaMatriculaModel.aluno">
+        <MappingFragment StoreEntitySet="aluno">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="turma_id" ColumnName="turma_id" />
+          <ScalarProperty Name="endereco_id" ColumnName="endereco_id" />
+          <ScalarProperty Name="contato_id" ColumnName="contato_id" />
+          <ScalarProperty Name="nomeAluno" ColumnName="nomeAluno" />
+          <ScalarProperty Name="nomeResponsavel" ColumnName="nomeResponsavel" />
+          <ScalarProperty Name="cpfAluno" ColumnName="cpfAluno" />
+          <ScalarProperty Name="cpfResponsavel" ColumnName="cpfResponsavel" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="dataNascimento" ColumnName="dataNascimento" />
+          <ScalarProperty Name="dataMatricula" ColumnName="dataMatricula" />
+          <ScalarProperty Name="dataSaida" ColumnName="dataSaida" />
+          <ScalarProperty Name="matricula" ColumnName="matricula" />
+          <ScalarProperty Name="beneficios" ColumnName="beneficios" />
+          <ScalarProperty Name="restricoes" ColumnName="restricoes" />
+          <ScalarProperty Name="situacao" ColumnName="situacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contato">
+      <EntityTypeMapping TypeName="sistemaMatriculaModel.contato">
+        <MappingFragment StoreEntitySet="contato">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fone1" ColumnName="fone1" />
+          <ScalarProperty Name="contato1" ColumnName="contato1" />
+          <ScalarProperty Name="fone2" ColumnName="fone2" />
+          <ScalarProperty Name="contato2" ColumnName="contato2" />
+          <ScalarProperty Name="fone3" ColumnName="fone3" />
+          <ScalarProperty Name="contato3" ColumnName="contato3" />
+          <ScalarProperty Name="fone4" ColumnName="fone4" />
+          <ScalarProperty Name="contato4" ColumnName="contato4" />
+          <ScalarProperty Name="fone5" ColumnName="fone5" />
+          <ScalarProperty Name="contato5" ColumnName="contato5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="disciplina">
+      <EntityTypeMapping TypeName="sistemaMatriculaModel.disciplina">
+        <MappingFragment StoreEntitySet="disciplina">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="endereco">
+      <EntityTypeMapping TypeName="sistemaMatriculaModel.endereco">
+        <MappingFragment StoreEntitySet="endereco">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="funcionario">
+      <EntityTypeMapping TypeName="sistemaMatriculaModel.funcionario">
+        <MappingFragment StoreEntitySet="funcionario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="dataAdmissao" ColumnName="dataAdmissao" />
+          <ScalarProperty Name="dataDemissao" ColumnName="dataDemissao" />
+          <ScalarProperty Name="situacao" ColumnName="situacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="turma">
+      <EntityTypeMapping TypeName="sistemaMatriculaModel.turma">
+        <MappingFragment StoreEntitySet="turma">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="disciplina_id" ColumnName="disciplina_id" />
+          <ScalarProperty Name="funcionario_id" ColumnName="funcionario_id" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="sala" ColumnName="sala" />
+          <ScalarProperty Name="situacao" ColumnName="situacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="sistemaMatriculaModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="funcionario_id" ColumnName="funcionario_id" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="senha" ColumnName="senha" />
+          <ScalarProperty Name="dataCriacao" ColumnName="dataCriacao" />
+          <ScalarProperty Name="situacao" ColumnName="situacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

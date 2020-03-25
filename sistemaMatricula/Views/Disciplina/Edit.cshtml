@@ -1,0 +1,77 @@
+﻿@model sistemaMatricula.Models.disciplina
+
+@{
+    ViewBag.Title = "Edit";
+}
+<style>
+    .body {
+        color: black;
+    }
+
+    #fundobotao {
+        background-color: rgb(255, 255, 255,0.3);
+    }
+
+    .col {
+        width: 300px;
+    }
+</style>
+
+<br />
+<h2 style="text-align:center">Atualizar Disciplina</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.id)
+
+        <div class="row">
+            <div class="col-md-5 offset-md-3"></div>
+            <div class="col-md-4 offset-md-4" id="fundobotao">
+                <br />
+                <div class="form-group">
+                    <b>
+                        @Html.LabelFor(model => model.nome, "Nome da Disciplina", htmlAttributes: new { @class = "control-label col-md-8" })
+                    </b>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.nome, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.nome, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <b>
+                        @Html.LabelFor(model => model.descricao, "Alguma Descrição", htmlAttributes: new { @class = "control-label col-md-8" })
+                    </b>
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(model => model.descricao, new { cols = 35, @rows = 5, @class = "form-control", placeholder = "Alunos de .. anos até  ... anos" })
+                        @Html.ValidationMessageFor(model => model.descricao, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col">
+
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Atualizar" class="btn btn-success btn-lg btn-block" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

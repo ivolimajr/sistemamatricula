@@ -1,0 +1,46 @@
+﻿@model sistemaMatricula.Models.disciplina
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<style>
+    .dados {
+        font-size: 20px;
+    }
+
+    .dl-horizontal {
+        background-color: rgb(255, 255, 255,0.3);
+        padding-left: 20px;
+    }
+</style>
+
+<br />
+<h2 style="text-align:center">Dados da Disciplina</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            Disciplina:
+            <b class="dados">
+                @Html.DisplayFor(model => model.nome)
+            </b>
+        </dt>
+        <br />
+
+        <dt>
+            Descrição:
+            <b class="dados">
+                @Html.DisplayFor(model => model.descricao)
+            </b>
+        </dt>
+        <br />
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id }, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Retornar", "Index", null, new { @class = "btn btn-light" })
+</p>

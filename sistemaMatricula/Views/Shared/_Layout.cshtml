@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Secretaria</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/sidebarMenu/style.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Matrículas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    @Html.ActionLink("Início", "Index", "home", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item active">
+                    @Html.ActionLink("Alunos", "Index", "aluno", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item active">
+                    @Html.ActionLink("Disciplinas", "Index", "disciplina", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item active">
+                    @Html.ActionLink("Funcionários", "Index", "funcionario", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item active">
+                    @Html.ActionLink("Turmas", "Index", "turma", null, new { @class = "nav-link" })
+                </li>
+            </ul>
+            <ul class="navbar-nav dropdown">
+
+                <li>
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Painel Administrativo
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="dropdown-item">@Html.ActionLink("Usuarios", "Index", "usuario")</li>
+                        <li class="dropdown-item">@Html.ActionLink("Em Breve", "Index", "Relatorio")</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("Sair do Sistema", "Index", "usuario", null, new { @class = "navbar-brand" })
+            </li>
+        </ul>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer style="text-align: center">
+            <p>&copy; @DateTime.Now.Year - Tópicos Avançados em S.I - Wesley Pereira</p>
+        </footer>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

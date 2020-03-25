@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sistemaMatriculaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="aluno">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="turma_id" Type="int" Nullable="false" />
+    <Property Name="endereco_id" Type="int" Nullable="false" />
+    <Property Name="contato_id" Type="int" Nullable="false" />
+    <Property Name="nomeAluno" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="nomeResponsavel" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="cpfAluno" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="cpfResponsavel" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="sexo" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="dataNascimento" Type="date" Nullable="false" />
+    <Property Name="dataMatricula" Type="date" Nullable="false" />
+    <Property Name="dataSaida" Type="date" />
+    <Property Name="matricula" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="beneficios" Type="text" Nullable="false" />
+    <Property Name="restricoes" Type="text" Nullable="false" />
+    <Property Name="situacao" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="contato">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fone1" Type="varchar" MaxLength="12" />
+    <Property Name="contato1" Type="varchar" MaxLength="60" />
+    <Property Name="fone2" Type="varchar" MaxLength="12" />
+    <Property Name="contato2" Type="varchar" MaxLength="60" />
+    <Property Name="fone3" Type="varchar" MaxLength="12" />
+    <Property Name="contato3" Type="varchar" MaxLength="60" />
+    <Property Name="fone4" Type="varchar" MaxLength="12" />
+    <Property Name="contato4" Type="varchar" MaxLength="60" />
+    <Property Name="fone5" Type="varchar" MaxLength="12" />
+    <Property Name="contato5" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="disciplina">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="40" />
+    <Property Name="descricao" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="endereco">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cep" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="descricao" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="numero" Type="char" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="funcionario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="descricao" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="dataAdmissao" Type="date" />
+    <Property Name="dataDemissao" Type="date" />
+    <Property Name="situacao" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="turma">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="disciplina_id" Type="int" Nullable="false" />
+    <Property Name="funcionario_id" Type="int" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="sala" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="situacao" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="funcionario_id" Type="int" Nullable="false" />
+    <Property Name="login" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="senha" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="dataCriacao" Type="date" Nullable="false" />
+    <Property Name="situacao" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__aluno__contato_i__395884C4">
+    <End Role="contato" Type="Self.contato" Multiplicity="1" />
+    <End Role="aluno" Type="Self.aluno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contato">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="aluno">
+        <PropertyRef Name="contato_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aluno__endereco___3A4CA8FD">
+    <End Role="endereco" Type="Self.endereco" Multiplicity="1" />
+    <End Role="aluno" Type="Self.aluno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="endereco">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="aluno">
+        <PropertyRef Name="endereco_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aluno__turma_id__3B40CD36">
+    <End Role="turma" Type="Self.turma" Multiplicity="1" />
+    <End Role="aluno" Type="Self.aluno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="turma">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="aluno">
+        <PropertyRef Name="turma_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__turma__disciplin__3587F3E0">
+    <End Role="disciplina" Type="Self.disciplina" Multiplicity="1" />
+    <End Role="turma" Type="Self.turma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="disciplina">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="turma">
+        <PropertyRef Name="disciplina_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__turma__funcionar__3493CFA7">
+    <End Role="funcionario" Type="Self.funcionario" Multiplicity="1" />
+    <End Role="turma" Type="Self.turma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="funcionario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="turma">
+        <PropertyRef Name="funcionario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__usuario__funcion__30C33EC3">
+    <End Role="funcionario" Type="Self.funcionario" Multiplicity="1" />
+    <End Role="usuario" Type="Self.usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="funcionario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="funcionario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="sistemaMatriculaModelStoreContainer">
+    <EntitySet Name="aluno" EntityType="Self.aluno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="contato" EntityType="Self.contato" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="disciplina" EntityType="Self.disciplina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="endereco" EntityType="Self.endereco" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="funcionario" EntityType="Self.funcionario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="turma" EntityType="Self.turma" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__aluno__contato_i__395884C4" Association="Self.FK__aluno__contato_i__395884C4">
+      <End Role="contato" EntitySet="contato" />
+      <End Role="aluno" EntitySet="aluno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aluno__endereco___3A4CA8FD" Association="Self.FK__aluno__endereco___3A4CA8FD">
+      <End Role="endereco" EntitySet="endereco" />
+      <End Role="aluno" EntitySet="aluno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aluno__turma_id__3B40CD36" Association="Self.FK__aluno__turma_id__3B40CD36">
+      <End Role="turma" EntitySet="turma" />
+      <End Role="aluno" EntitySet="aluno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__turma__disciplin__3587F3E0" Association="Self.FK__turma__disciplin__3587F3E0">
+      <End Role="disciplina" EntitySet="disciplina" />
+      <End Role="turma" EntitySet="turma" />
+    </AssociationSet>
+    <AssociationSet Name="FK__turma__funcionar__3493CFA7" Association="Self.FK__turma__funcionar__3493CFA7">
+      <End Role="funcionario" EntitySet="funcionario" />
+      <End Role="turma" EntitySet="turma" />
+    </AssociationSet>
+    <AssociationSet Name="FK__usuario__funcion__30C33EC3" Association="Self.FK__usuario__funcion__30C33EC3">
+      <End Role="funcionario" EntitySet="funcionario" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

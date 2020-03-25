@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2b4557632a39409393a9b228bd809185" Name="Diagram1">
+        <EntityTypeShape EntityType="sistemaMatriculaModel.aluno" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemaMatriculaModel.contato" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemaMatriculaModel.disciplina" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemaMatriculaModel.endereco" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemaMatriculaModel.funcionario" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemaMatriculaModel.turma" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sistemaMatriculaModel.usuario" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <AssociationConnector Association="sistemaMatriculaModel.FK__aluno__contato_i__395884C4" ManuallyRouted="false" />
+        <AssociationConnector Association="sistemaMatriculaModel.FK__aluno__endereco___3A4CA8FD" ManuallyRouted="false" />
+        <AssociationConnector Association="sistemaMatriculaModel.FK__aluno__turma_id__3B40CD36" ManuallyRouted="false" />
+        <AssociationConnector Association="sistemaMatriculaModel.FK__turma__disciplin__3587F3E0" ManuallyRouted="false" />
+        <AssociationConnector Association="sistemaMatriculaModel.FK__turma__funcionar__3493CFA7" ManuallyRouted="false" />
+        <AssociationConnector Association="sistemaMatriculaModel.FK__usuario__funcion__30C33EC3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
