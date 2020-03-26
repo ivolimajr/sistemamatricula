@@ -48,10 +48,12 @@ namespace sistemaMatricula.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,funcionario_id,email,senha,dataCriacao,situacao")] usuario usuario)
+        public ActionResult Create([Bind(Include = "id,funcionario_id,login,senha,dataCriacao,situacao")] usuario usuario)
         {
             if (ModelState.IsValid)
             {
+                usuario.senha = Crypt.Hash(usuario.senha);
+                usuario.situacao = true;
                 db.usuario.Add(usuario);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -86,6 +88,7 @@ namespace sistemaMatricula.Controllers
         {
             if (ModelState.IsValid)
             {
+                usuario.senha = Crypt.Hash(usuario.senha);
                 db.Entry(usuario).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

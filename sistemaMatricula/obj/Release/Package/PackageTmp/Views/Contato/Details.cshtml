@@ -1,0 +1,98 @@
+﻿@model sistemaMatricula.Models.contato
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>contato</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fone1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fone2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fone3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fone4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fone5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fone5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contato5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contato5)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
