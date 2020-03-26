@@ -24,42 +24,47 @@ namespace sistemaMatricula.Models
         public int id { get; set; }
 
 
+        [StringLength(12, ErrorMessage = "Mínimo 2 e no máximo 12 caracteres", MinimumLength = 8)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string fone1 { get; set; }
 
-
+        [StringLength(60, ErrorMessage = "Mínimo 2 e no máximo 60 caracteres", MinimumLength = 2)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string contato1 { get; set; }
 
-
+        [StringLength(12, ErrorMessage = "Mínimo 2 e no máximo 612 caracteres", MinimumLength = 8)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string fone2 { get; set; }
 
 
+        [StringLength(60, ErrorMessage = "Mínimo 2 e no máximo 60 caracteres", MinimumLength = 2)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string contato2 { get; set; }
 
-
+        [StringLength(12, ErrorMessage = "Mínimo 2 e no máximo 12 caracteres", MinimumLength = 8)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string fone3 { get; set; }
 
 
+        [StringLength(60, ErrorMessage = "Mínimo 2 e no máximo 60 caracteres", MinimumLength = 2)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string contato3 { get; set; }
 
-
+        [StringLength(12, ErrorMessage = "Mínimo 2 e no máximo 12 caracteres", MinimumLength = 8)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string fone4 { get; set; }
 
 
+        [StringLength(60, ErrorMessage = "Mínimo 2 e no máximo 60 caracteres", MinimumLength = 2)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string contato4 { get; set; }
 
-
+        [StringLength(12, ErrorMessage = "Mínimo 2 e no máximo 12 caracteres", MinimumLength = 8)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string fone5 { get; set; }
 
 
+        [StringLength(60, ErrorMessage = "Mínimo 2 e no máximo 60 caracteres", MinimumLength = 2)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string contato5 { get; set; }
     

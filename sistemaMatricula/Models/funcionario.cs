@@ -11,7 +11,8 @@ namespace sistemaMatricula.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class funcionario
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -22,7 +23,15 @@ namespace sistemaMatricula.Models
         }
     
         public int id { get; set; }
+
+
+        [StringLength(60, ErrorMessage = "Mínimo 3 e no máximo 60 caracteres", MinimumLength = 3)]
+        [Required(ErrorMessage = "Campo Necessário")]
         public string nome { get; set; }
+
+
+        [StringLength(40, ErrorMessage = "Máximo 40 caracteres", MinimumLength = 0)]
+        [Required(ErrorMessage = "Campo Necessário")]
         public string descricao { get; set; }
         public Nullable<System.DateTime> dataAdmissao { get; set; }
         public Nullable<System.DateTime> dataDemissao { get; set; }

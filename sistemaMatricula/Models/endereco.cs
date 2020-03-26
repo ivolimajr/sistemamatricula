@@ -22,14 +22,16 @@ namespace sistemaMatricula.Models
         }
     
         public int id { get; set; }
+
+        [StringLength(10, ErrorMessage = "Mínimo 8 e no máximo 10 caracteres", MinimumLength = 8)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string cep { get; set; }
 
-
+        [StringLength(60, ErrorMessage = "Mínimo 2 e no máximo 60 caracteres", MinimumLength = 2)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string descricao { get; set; }
 
-
+        [StringLength(10, ErrorMessage = "Mínimo 2 e no máximo 10 caracteres", MinimumLength = 2)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string numero { get; set; }
     

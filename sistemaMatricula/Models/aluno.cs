@@ -21,18 +21,23 @@ namespace sistemaMatricula.Models
         public int contato_id { get; set; }
 
 
+        [StringLength(60, ErrorMessage = "Mínimo 3 e no máximo 60 caracteres", MinimumLength = 3)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string nomeAluno { get; set; }
 
 
+        [StringLength(60, ErrorMessage = "Mínimo 4 e no máximo 60 caracteres", MinimumLength = 4)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string nomeResponsavel { get; set; }
 
 
+        [StringLength(14, ErrorMessage = "CPF deve conter 11 dígitos", MinimumLength = 14)]
+        [ValidaCpf(ErrorMessage = "Join Date can not be greater than current date")]
         [Required(ErrorMessage = "Campo Necessário")]
         public string cpfAluno { get; set; }
 
 
+        [StringLength(14, ErrorMessage = "CPF deve conter 11 dígitos", MinimumLength = 14)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string cpfResponsavel { get; set; }
 
@@ -51,16 +56,24 @@ namespace sistemaMatricula.Models
         public Nullable<System.DateTime> dataSaida { get; set; }
 
 
+        [StringLength(11, ErrorMessage = "Mínimo 2 e no máximo 11 caracteres", MinimumLength = 2)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string matricula { get; set; }
 
 
+        [StringLength(100, ErrorMessage = "Mínimo 1 e no máximo 100 caracteres", MinimumLength = 2)]
+        [Required(ErrorMessage = "Campo Necessário")]
         public string beneficios { get; set; }
+
+
+        [StringLength(100, ErrorMessage = "Mínimo 1 e no máximo 100 caracteres", MinimumLength = 2)]
+        [Required(ErrorMessage = "Campo Necessário")]
         public string restricoes { get; set; }
         public bool situacao { get; set; }
 
         public virtual contato contato { get; set; }
         public virtual endereco endereco { get; set; }
         public virtual turma turma { get; set; }
+
     }
 }

@@ -11,7 +11,8 @@ namespace sistemaMatricula.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class turma
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,8 +24,18 @@ namespace sistemaMatricula.Models
         public int id { get; set; }
         public int disciplina_id { get; set; }
         public int funcionario_id { get; set; }
+
+
+        [StringLength(40, ErrorMessage = "Mínimo 2 e no máximo 40 caracteres", MinimumLength = 2)]
+        [Required(ErrorMessage = "Campo Necessário")]
         public string nome { get; set; }
+
+
+        [StringLength(20, ErrorMessage = "Mínimo 2 e no máximo 20 caracteres", MinimumLength = 2)]
+        [Required(ErrorMessage = "Campo Necessário")]
         public string sala { get; set; }
+
+
         public bool situacao { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
