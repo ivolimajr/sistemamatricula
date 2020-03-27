@@ -46,13 +46,16 @@ namespace sistemaMatricula.Models
         public string sexo { get; set; }
 
 
+        [DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [Required(ErrorMessage = "Campo Necessário")]
         public System.DateTime dataNascimento { get; set; }
 
 
+        [DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [Required(ErrorMessage = "Campo Necessário")]
         public System.DateTime dataMatricula { get; set; }
 
+        [DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public Nullable<System.DateTime> dataSaida { get; set; }
 
 

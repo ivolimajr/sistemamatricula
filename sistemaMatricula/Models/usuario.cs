@@ -21,6 +21,7 @@ namespace sistemaMatricula.Models
         [Required(ErrorMessage = "Campo Necessário")]
         [DataType(DataType.Password)]
         public string senha { get; set; }
+        [DataType(DataType.Date), DisplayFormat(DataFormatString ="{0:dd/MM/yyyy}" )]
         public System.DateTime dataCriacao { get; set; }
         public bool situacao { get; set; }
         public string LoginErrorMessage { get; set; }

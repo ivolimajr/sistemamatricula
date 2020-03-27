@@ -33,8 +33,15 @@ namespace sistemaMatricula.Models
         [StringLength(40, ErrorMessage = "Máximo 40 caracteres", MinimumLength = 0)]
         [Required(ErrorMessage = "Campo Necessário")]
         public string descricao { get; set; }
+
+
+        [DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public Nullable<System.DateTime> dataAdmissao { get; set; }
+
+
+        [DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public Nullable<System.DateTime> dataDemissao { get; set; }
+
         public bool situacao { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -84,7 +84,7 @@ namespace sistemaMatricula.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,funcionario_id,email,senha,dataCriacao,situacao")] usuario usuario)
+        public ActionResult Edit([Bind(Include = "id,funcionario_id,login,senha,dataCriacao,situacao")] usuario usuario)
         {
             if (ModelState.IsValid)
             {

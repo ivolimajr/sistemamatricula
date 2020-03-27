@@ -56,10 +56,7 @@
             <div class="form-group">
                 <label class="control-label col-md-6"><b>Data Nascimento</b></label>
                 <div class="col-md-10">
-                    @{
-                        DateTime dataNascimento = Convert.ToDateTime(Model.dataNascimento);
-                    }
-                    @dataNascimento.ToString("dd/MM/yyyy")
+                    @Html.DisplayFor(model => model.dataNascimento)
                 </div>
             </div>
 
@@ -172,10 +169,7 @@
             <div class="form-group">
                 <label class="control-label col-md-6"><b>Data da Matrícula</b></label>
                 <div class="col-md-10">
-                    @{
-                        DateTime dataMatricula = Convert.ToDateTime(Model.dataMatricula);
-                    }
-                    @dataMatricula.ToString("dd/MM/yyyy")
+                    @Html.DisplayFor(model => model.dataMatricula)
                 </div>
             </div>
 
@@ -192,7 +186,7 @@
                         }
                         else
                         {
-                            saida = dataSaida.ToString("dd/MM/yyyy");
+                            @Html.DisplayFor(model => model.dataSaida)
                         }
                     }
                     @saida
