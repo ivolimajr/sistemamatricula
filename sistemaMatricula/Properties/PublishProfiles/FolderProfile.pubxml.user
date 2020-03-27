@@ -283,10 +283,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>09/26/2019 20:43:26</publishTime>
     </File>
     <File Include="bin/sistemaMatricula.dll">
-      <publishTime>03/27/2020 09:43:24</publishTime>
+      <publishTime>03/27/2020 14:24:27</publishTime>
     </File>
     <File Include="bin/sistemaMatricula.pdb">
-      <publishTime>03/27/2020 09:43:24</publishTime>
+      <publishTime>03/27/2020 14:24:27</publishTime>
     </File>
     <File Include="bin/System.Buffers.dll">
       <publishTime>07/19/2017 10:01:28</publishTime>
@@ -391,508 +391,556 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/20/2020 21:24:06</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/css/font-awesome.css">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/css/font-awesome.min.css">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.eot">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.svg">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.woff">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/fonts/FontAwesome.otf">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/HELP-US-OUT.txt">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/animated.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/bordered-pulled.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/core.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/fixed-width.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/font-awesome.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/icons.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/larger.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/list.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/mixins.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/path.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/rotated-flipped.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/screen-reader.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/stacked.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/less/variables.less">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/font-awesome.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_animated.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_bordered-pulled.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_core.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_fixed-width.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_icons.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_larger.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_list.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_mixins.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_path.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_rotated-flipped.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_screen-reader.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_stacked.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/font-awesome-4.7.0/scss/_variables.scss">
-      <publishTime>03/23/2020 20:28:24</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/imgHome/aluno.png">
-      <publishTime>03/26/2020 09:09:21</publishTime>
+      <publishTime>03/27/2020 14:18:42</publishTime>
     </File>
     <File Include="Content/imgHome/professor.png">
-      <publishTime>03/26/2020 09:10:36</publishTime>
+      <publishTime>03/27/2020 14:18:43</publishTime>
     </File>
     <File Include="Content/imgHome/relatorios.png">
-      <publishTime>03/26/2020 08:47:44</publishTime>
+      <publishTime>03/27/2020 14:18:43</publishTime>
     </File>
     <File Include="Content/LoginStyle/bootstrapv2.min.css">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/css/main.css">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/css/util.css">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/css/font-awesome.css">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/HELP-US-OUT.txt">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/animated.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/bordered-pulled.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/core.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/fixed-width.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/font-awesome.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/icons.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/larger.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/list.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/mixins.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/path.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/rotated-flipped.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/screen-reader.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/stacked.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/less/variables.less">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/bootstrapv2.min.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/css/main.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/css/util.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/fonts/font-awesome-4.7.0/css/font-awesome.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/images/bg-01.jpg">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/images/creche.png">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/images/icons/favicon.ico">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/vendor/animate/animate.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/vendor/animsition/css/animsition.min.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/vendor/bootstrap/css/bootstrap.min.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/vendor/css-hamburgers/hamburgers.min.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/vendor/daterangepicker/daterangepicker.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
+    </File>
+    <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/LoginStyle/vendor/select2/select2.min.css">
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/font-awesome.scss">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_animated.scss">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_core.scss">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_fixed-width.scss">
-      <publishTime>03/26/2020 11:00:26</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_icons.scss">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_larger.scss">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_list.scss">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_mixins.scss">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_path.scss">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_screen-reader.scss">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_stacked.scss">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/font-awesome-4.7.0/scss/_variables.scss">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-Black.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-BlackItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-Bold.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-BoldItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-ExtraBold.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-ExtraLight.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-ExtraLightItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-Italic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-Light.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-LightItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-Medium.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-MediumItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-Regular.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-SemiBold.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-SemiBoldItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-Thin.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/Montserrat-ThinItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/montserrat/OFL.txt">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-Black.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-BlackItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-Bold.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-BoldItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-ExtraBold.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-ExtraBoldItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-ExtraLight.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-ExtraLightItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-Italic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-Light.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-LightItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-Medium.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-MediumItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-Regular.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-SemiBold.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-SemiBoldItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-Thin.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/fonts/poppins/Poppins-ThinItalic.ttf">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:28</publishTime>
     </File>
     <File Include="Content/LoginStyle/images/bg-01.jpg">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:21:59</publishTime>
     </File>
     <File Include="Content/LoginStyle/images/creche.png">
-      <publishTime>03/26/2020 12:00:36</publishTime>
+      <publishTime>03/27/2020 14:21:59</publishTime>
     </File>
     <File Include="Content/LoginStyle/images/icons/favicon.ico">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/images/icons/icon-google.png">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/images/icons/map-marker.png">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/images/icons/symbol-01.png">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/images/pupino.png">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/js/main.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/animate/animate.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/animsition/css/animsition.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/animsition/css/animsition.min.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/animsition/js/animsition.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/animsition/js/animsition.min.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap-grid.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap-grid.css.map">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap-grid.min.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap-grid.min.css.map">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap-reboot.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap-reboot.css.map">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap-reboot.min.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap-reboot.min.css.map">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap.css.map">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap.min.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/css/bootstrap.min.css.map">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/js/bootstrap.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/js/bootstrap.min.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/js/popper.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/js/popper.min.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/bootstrap/js/tooltip.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/countdowntime/countdowntime.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/css-hamburgers/hamburgers.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/css-hamburgers/hamburgers.min.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/daterangepicker/daterangepicker.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/daterangepicker/daterangepicker.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/daterangepicker/moment.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/daterangepicker/moment.min.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/jquery/jquery-3.2.1.min.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/perfect-scrollbar/perfect-scrollbar.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/perfect-scrollbar/perfect-scrollbar.min.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/select2/select2.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/select2/select2.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/select2/select2.min.css">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/LoginStyle/vendor/select2/select2.min.js">
-      <publishTime>03/26/2020 11:00:27</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/sidebarMenu/style.css">
-      <publishTime>03/20/2020 21:55:04</publishTime>
+      <publishTime>03/27/2020 14:03:29</publishTime>
     </File>
     <File Include="Content/Site.css">
       <publishTime>03/20/2020 21:20:38</publishTime>
@@ -1240,13 +1288,13 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/26/2020 11:50:46</publishTime>
     </File>
     <File Include="Views/Aluno/Details.cshtml">
-      <publishTime>03/26/2020 11:50:46</publishTime>
+      <publishTime>03/27/2020 10:16:07</publishTime>
     </File>
     <File Include="Views/Aluno/Edit.cshtml">
-      <publishTime>03/26/2020 11:50:46</publishTime>
+      <publishTime>03/27/2020 10:20:31</publishTime>
     </File>
     <File Include="Views/Aluno/Index.cshtml">
-      <publishTime>03/26/2020 11:50:33</publishTime>
+      <publishTime>03/27/2020 09:54:08</publishTime>
     </File>
     <File Include="Views/Contato/Create.cshtml">
       <publishTime>03/20/2020 22:35:34</publishTime>
@@ -1267,7 +1315,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/26/2020 11:51:33</publishTime>
     </File>
     <File Include="Views/Disciplina/Delete.cshtml">
-      <publishTime>03/26/2020 11:51:33</publishTime>
+      <publishTime>03/27/2020 13:37:15</publishTime>
     </File>
     <File Include="Views/Disciplina/Details.cshtml">
       <publishTime>03/26/2020 11:51:33</publishTime>
@@ -1318,7 +1366,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/26/2020 11:52:39</publishTime>
     </File>
     <File Include="Views/Home/Login.cshtml">
-      <publishTime>03/26/2020 12:02:09</publishTime>
+      <publishTime>03/27/2020 13:18:51</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>03/20/2020 21:20:38</publishTime>
@@ -1345,13 +1393,13 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/27/2020 08:13:59</publishTime>
     </File>
     <File Include="Views/Usuario/Delete.cshtml">
-      <publishTime>03/26/2020 11:54:04</publishTime>
+      <publishTime>03/27/2020 13:37:56</publishTime>
     </File>
     <File Include="Views/Usuario/Details.cshtml">
-      <publishTime>03/26/2020 11:54:04</publishTime>
+      <publishTime>03/27/2020 13:33:07</publishTime>
     </File>
     <File Include="Views/Usuario/Edit.cshtml">
-      <publishTime>03/27/2020 09:41:24</publishTime>
+      <publishTime>03/27/2020 10:15:23</publishTime>
     </File>
     <File Include="Views/Usuario/Index.cshtml">
       <publishTime>03/26/2020 11:54:04</publishTime>
@@ -1363,7 +1411,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/20/2020 21:20:38</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/27/2020 09:43:25</publishTime>
+      <publishTime>03/27/2020 13:53:35</publishTime>
     </File>
   </ItemGroup>
 </Project>

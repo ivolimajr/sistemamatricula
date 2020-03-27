@@ -54,7 +54,7 @@
         @{
             DateTime dataSaida = Convert.ToDateTime(item.dataMatricula.ToString());
         }
-        @dataSaida.ToString("dd/MM/yyyy")
+        @Html.DisplayFor(modelItem => item.dataMatricula)
     </td>
     <td>
         @Html.DisplayFor(modelItem => item.turma.nome)

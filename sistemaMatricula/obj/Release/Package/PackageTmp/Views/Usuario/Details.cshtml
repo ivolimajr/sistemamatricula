@@ -8,55 +8,52 @@
     }
 }
 
-<h2>Details</h2>
+<style>
+    .dados {
+        font-size: 20px;
+    }
+
+    .dl-horizontal {
+        background-color: rgb(255, 255, 255,0.3);
+        padding-left: 20px;
+    }
+</style>
+
+<br />
+<h2 style="text-align:center">Detalhes</h2>
 
 <div>
-    <h4>usuario</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.email)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.email)
-        </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.senha)
+            Nome:
+            <b class="dados">
+                @Html.DisplayFor(model => model.funcionario.nome)
+            </b>
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.senha)
-        </dd>
+        <br />
 
         <dt>
-            @Html.DisplayNameFor(model => model.dataCriacao)
+            Login:
+            <b class="dados">
+                @Html.DisplayFor(model => model.login)
+            </b>
         </dt>
+        <br />
 
-        <dd>
-            @Html.DisplayFor(model => model.dataCriacao)
-        </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.situacao)
+            Situação:
+            <b class="dados">
+                @Html.DisplayFor(model => model.situacao)
+            </b>
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.situacao)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.funcionario.nome)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.funcionario.nome)
-        </dd>
+        <br />
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id }, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Retornar", "Index", null, new { @class = "btn btn-light" })
 </p>

@@ -17,7 +17,7 @@ namespace sistemaMatricula.Controllers
         // GET: Aluno
         public ActionResult Index()
         {
-            var aluno = db.aluno.Include(a => a.contato).Include(a => a.endereco).Include(a => a.turma);
+            var aluno = db.aluno.Include(a => a.contato).Include(a => a.endereco).Include(a => a.turma).OrderBy(a => a.nomeAluno);
             return View(aluno.ToList());
         }
 
@@ -88,7 +88,7 @@ namespace sistemaMatricula.Controllers
                         contatoLista.Add(item);
                     }
 
-                    aluno.situacao = true;
+                    aluno.situacao = false;
                     aluno.contato_id = contatoLista[0].id;
                     aluno.endereco_id = enderecoLista[0].id;
 
