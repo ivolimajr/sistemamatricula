@@ -267,7 +267,9 @@
     <Compile Include="Models\usuario.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ValidaCpf.cs" />
+    <Compile Include="Models\Validadores\ValidaSenha .cs" />
+    <Compile Include="Models\Validadores\ValidaLogin.cs" />
+    <Compile Include="Models\Validadores\ValidaCpf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

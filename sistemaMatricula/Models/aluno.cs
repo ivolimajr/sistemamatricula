@@ -32,7 +32,7 @@ namespace sistemaMatricula.Models
 
 
         [StringLength(14, ErrorMessage = "CPF deve conter 11 dígitos", MinimumLength = 14)]
-        [ValidaCpf(ErrorMessage = "Join Date can not be greater than current date")]
+        [ValidaCpf]
         [Required(ErrorMessage = "Campo Necessário")]
         public string cpfAluno { get; set; }
 

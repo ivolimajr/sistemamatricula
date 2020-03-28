@@ -17,7 +17,12 @@ namespace sistemaMatricula.Models
     {
         public int id { get; set; }
         public int funcionario_id { get; set; }
+
+        [ValidaLogin]
+        [Required(ErrorMessage = "Campo Necessário")]
         public string login { get; set; }
+
+        [ValidaSenha]
         [Required(ErrorMessage = "Campo Necessário")]
         [DataType(DataType.Password)]
         public string senha { get; set; }

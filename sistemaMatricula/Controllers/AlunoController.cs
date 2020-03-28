@@ -169,7 +169,11 @@ namespace sistemaMatricula.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             aluno aluno = db.aluno.Find(id);
+            contato contato = db.contato.Find(aluno.contato_id);
+            endereco endereco = db.endereco.Find(aluno.endereco_id);
             db.aluno.Remove(aluno);
+            db.endereco.Remove(endereco);
+            db.contato.Remove(contato);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
