@@ -17,7 +17,7 @@ namespace sistemaMatricula.Controllers
         // GET: Usuario
         public ActionResult Index()
         {
-            var usuario = db.usuario.Include(u => u.funcionario);
+            var usuario = db.usuario.Include(u => u.funcionario).OrderBy(a => a.nome));
             return View(usuario.ToList());
         }
 

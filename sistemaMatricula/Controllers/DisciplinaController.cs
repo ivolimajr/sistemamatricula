@@ -17,7 +17,7 @@ namespace sistemaMatricula.Controllers
         // GET: Disciplina
         public ActionResult Index()
         {
-            return View(db.disciplina.ToList());
+            return View(db.disciplina.ToList().OrderBy(a => a.nome));
         }
 
         // GET: Disciplina/Details/5

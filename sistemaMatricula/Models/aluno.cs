@@ -38,6 +38,7 @@ namespace sistemaMatricula.Models
 
 
         [StringLength(14, ErrorMessage = "CPF deve conter 11 dígitos", MinimumLength = 14)]
+        [ValidaCpf]
         [Required(ErrorMessage = "Campo Necessário")]
         public string cpfResponsavel { get; set; }
 

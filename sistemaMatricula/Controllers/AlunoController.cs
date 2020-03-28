@@ -55,47 +55,35 @@ namespace sistemaMatricula.Controllers
             if (ModelState.IsValid)
             {
 
-                List<aluno> alunoLista = new List<aluno>();
-                string queryAluno = "SELECT * FROM aluno WHERE cpfAluno = '" + aluno.cpfAluno + "'";
-                var alunoBanco = db.aluno.SqlQuery(queryAluno).ToList();
+                var alunoBanco = db.aluno.FirstOrDefault(a => a.cpfAluno == aluno.cpfAluno);
 
-                foreach (var item in alunoBanco)
+                if(alunoBanco == null)
                 {
-                    alunoLista.Add(item);
-                }
-
-                if(alunoLista.Count == 0)
-                {
-                    List<endereco> enderecoLista = new List<endereco>();
                     db.endereco.Add(endereco);
                     db.SaveChanges();
-                    string enderecoQuery = "SELECT * FROM endereco WHERE cep = '" + endereco.cep + "' AND descricao = '" + endereco.descricao + "' AND numero = '" + endereco.numero + "' ";
-                    var enderecoBanco = db.endereco.SqlQuery(enderecoQuery).ToList();
 
-                    foreach (var item in enderecoBanco)
-                    {
-                        enderecoLista.Add(item);
-                    }
-
-                    List<contato> contatoLista = new List<contato>();
+                    var enderecoBanco = db.endereco.
+                                        FirstOrDefault( e => e.cep == endereco.cep && 
+                                                        e.descricao == endereco.descricao && 
+                                                        e.numero == endereco.numero);
+                                    
                     db.contato.Add(contato);
                     db.SaveChanges();
-                    string contatoQuery = "SELECT * FROM contato WHERE contato1 = '" + contato.contato1 + "' AND contato2 = '" + contato.contato2 + "' ";
-                    var contatoBanco = db.contato.SqlQuery(contatoQuery).ToList();
+                    var contatoBanco = db.contato.FirstOrDefault(   c => c.contato1 == contato.contato1 &&
+                                                                    c.fone1 == contato.fone1 &&
+                                                                    c.contato2 == contato.contato2 &&
+                                                                    c.fone2 == contato.fone2 &&
+                                                                    c.contato4 == contato.contato4 &&
+                                                                    c.fone4 == contato.fone4);
 
-                    foreach (var item in contatoBanco)
-                    {
-                        contatoLista.Add(item);
-                    }
-
-                    aluno.situacao = false;
-                    aluno.contato_id = contatoLista[0].id;
-                    aluno.endereco_id = enderecoLista[0].id;
+                    aluno.situacao = true;
+                    aluno.contato_id = contatoBanco.id;
+                    aluno.endereco_id = enderecoBanco.id;
 
                     db.aluno.Add(aluno);
                     db.SaveChanges();
                     return RedirectToAction("Index");
-
+                    
                 }
 
                 

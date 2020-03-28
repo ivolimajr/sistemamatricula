@@ -17,7 +17,7 @@ namespace sistemaMatricula.Controllers
         // GET: Turma
         public ActionResult Index()
         {
-            var turma = db.turma.Include(t => t.disciplina).Include(t => t.funcionario);
+            var turma = db.turma.Include(t => t.disciplina).Include(t => t.funcionario).OrderBy(a => a.nome));
             return View(turma.ToList());
         }
 

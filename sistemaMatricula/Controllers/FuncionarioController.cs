@@ -17,7 +17,7 @@ namespace sistemaMatricula.Controllers
         // GET: Funcionario
         public ActionResult Index()
         {
-            return View(db.funcionario.ToList());
+            return View(db.funcionario.ToList().OrderBy(a => a.nome));
         }
 
         // GET: Funcionario/Details/5
@@ -50,6 +50,7 @@ namespace sistemaMatricula.Controllers
         {
             if (ModelState.IsValid)
             {
+                funcionario.situacao = true;
                 db.funcionario.Add(funcionario);
                 db.SaveChanges();
                 return RedirectToAction("Index");
