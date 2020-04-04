@@ -283,10 +283,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>09/26/2019 20:43:26</publishTime>
     </File>
     <File Include="bin/sistemaMatricula.dll">
-      <publishTime>03/27/2020 14:24:27</publishTime>
+      <publishTime>04/01/2020 10:34:35</publishTime>
     </File>
     <File Include="bin/sistemaMatricula.pdb">
-      <publishTime>03/27/2020 14:24:27</publishTime>
+      <publishTime>04/01/2020 10:34:35</publishTime>
     </File>
     <File Include="bin/System.Buffers.dll">
       <publishTime>07/19/2017 10:01:28</publishTime>
@@ -1294,7 +1294,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/27/2020 10:20:31</publishTime>
     </File>
     <File Include="Views/Aluno/Index.cshtml">
-      <publishTime>03/27/2020 09:54:08</publishTime>
+      <publishTime>03/28/2020 12:56:26</publishTime>
     </File>
     <File Include="Views/Contato/Create.cshtml">
       <publishTime>03/20/2020 22:35:34</publishTime>
@@ -1342,7 +1342,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/20/2020 22:36:28</publishTime>
     </File>
     <File Include="Views/Funcionario/Create.cshtml">
-      <publishTime>03/27/2020 08:14:03</publishTime>
+      <publishTime>03/28/2020 11:55:50</publishTime>
     </File>
     <File Include="Views/Funcionario/Delete.cshtml">
       <publishTime>03/26/2020 11:52:25</publishTime>
@@ -1351,10 +1351,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/26/2020 11:52:25</publishTime>
     </File>
     <File Include="Views/Funcionario/Edit.cshtml">
-      <publishTime>03/27/2020 08:23:35</publishTime>
+      <publishTime>03/28/2020 11:41:17</publishTime>
     </File>
     <File Include="Views/Funcionario/Index.cshtml">
-      <publishTime>03/27/2020 08:37:40</publishTime>
+      <publishTime>03/28/2020 11:46:13</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>03/20/2020 21:20:38</publishTime>
@@ -1363,10 +1363,13 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/20/2020 21:20:38</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>03/26/2020 11:52:39</publishTime>
+      <publishTime>03/28/2020 15:13:12</publishTime>
     </File>
     <File Include="Views/Home/Login.cshtml">
       <publishTime>03/27/2020 13:18:51</publishTime>
+    </File>
+    <File Include="Views/Relatorio/Index.cshtml">
+      <publishTime>03/28/2020 15:12:55</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>03/20/2020 21:20:38</publishTime>
@@ -1411,7 +1414,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/20/2020 21:20:38</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/27/2020 13:53:35</publishTime>
+      <publishTime>04/01/2020 10:34:37</publishTime>
     </File>
   </ItemGroup>
 </Project>
